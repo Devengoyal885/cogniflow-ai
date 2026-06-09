@@ -6,6 +6,22 @@ CogniFlow AI is a full-stack analytics dashboard that gives enterprise teams com
 
 ---
 
+## 🖥️ Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](assets/screenshots/dashboard.png)
+> Real-time metrics, decision volume charts, and model performance at a glance.
+
+### RuleGPT Builder
+![RuleGPT Builder](assets/screenshots/rulegpt.png)
+> Create and deploy business rules using natural language — powered by AI.
+
+### System Architecture
+![Architecture Diagram](assets/screenshots/architecture.png)
+> Full-stack architecture: React frontend → FastAPI backend → AI/LLM layer + databases.
+
+---
+
 ## ✨ Features
 
 | Module | Description |
@@ -100,7 +116,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Copy env file and add your API keys
-cp .env.example .env   # or set variables directly
+cp .env.example .env
 
 # Run the FastAPI server
 uvicorn main:app --reload --port 8000
@@ -164,6 +180,8 @@ cogniflow-ai-analytics-dashboard/
 │       ├── rules_engine/   # Rule execution engine
 │       ├── simulation/     # Simulation lab
 │       └── other_agents/   # Additional AI agents
+├── assets/
+│   └── screenshots/        # README screenshots
 ├── docker-compose.yml
 ├── vite.config.ts
 └── package.json
